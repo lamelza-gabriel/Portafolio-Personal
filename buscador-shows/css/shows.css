@@ -1,0 +1,218 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #EDEDED;
+}
+
+html body {
+  font-family: 'Roboto', sans-serif;
+}
+
+html body header .top-header {
+  background-color: #112031;
+  padding: 15px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html body header .top-header .user-container {
+  color: whitesmoke;
+  width: 200px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body header .top-header .user-container p {
+  display: inline;
+  font-size: 18px;
+}
+
+html body header .top-header .user-container p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+html body header .top-header img {
+  height: 60px;
+}
+
+html body header nav {
+  width: 100%;
+  background-color: #C84B31;
+  border-bottom: 1px solid black;
+}
+
+@media screen and (min-width: 0) and (max-width: 700px) {
+  html body header nav {
+    display: none;
+  }
+}
+
+html body header nav ul {
+  max-width: 1000px;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+html body header nav li {
+  display: inline-block;
+  padding: 10px 20px;
+  width: 15%;
+  text-align: center;
+}
+
+html body header nav li:hover {
+  cursor: pointer;
+  background-color: #112031;
+  color: whitesmoke;
+}
+
+html body main h1 {
+  text-align: center;
+  color: black;
+  font-weight: 300;
+  border-bottom: 1px solid black;
+  width: 40%;
+  margin: 30px auto;
+  max-width: 500px;
+  min-width: 220px;
+  padding: 5px 0px;
+}
+
+html body main .search-container {
+  text-align: center;
+  margin: auto;
+}
+
+html body main .search-container input {
+  width: 80%;
+  max-width: 700px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+  height: 35px;
+}
+
+html body main .search-container button {
+  color: whitesmoke;
+  height: 35px;
+  padding: 0px 20px;
+  background-color: #112031;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+html body main .search-container .thanks-text {
+  max-width: 700px;
+  width: 80%;
+  margin: 10px auto;
+  text-align: left;
+}
+
+html body main .search-container .thanks-text a {
+  color: #C84B31;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+html body main .shows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  max-width: 1500px;
+  margin: 30px auto;
+}
+
+@media screen and (min-width: 0) and (max-width: 700px) {
+  html body main .shows {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+html body main .shows article {
+  width: 45%;
+  padding: 10px;
+  margin: 10px auto;
+  text-align: center;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+
+@media screen and (min-width: 0) and (max-width: 700px) {
+  html body main .shows article {
+    width: 90%;
+  }
+}
+
+html body main .shows article h3 {
+  text-decoration: underline;
+}
+
+html body main .shows article p {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: auto;
+  width: 90%;
+  padding: 5px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+html body main .shows article img {
+  max-width: 80%;
+}
+
+html body main .shows article a {
+  margin: 10px auto;
+  color: #C84B31;
+}
+
+html body main .shows article a:hover {
+  text-decoration: underline;
+  color: #112031;
+}
+
+html footer {
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  border-top: 1px solid black;
+  padding: 6px;
+  background: #112031;
+  text-align: center;
+}
+
+.loader {
+  text-align: center;
+  margin: 10px auto;
+}
+/*# sourceMappingURL=08.css.map */

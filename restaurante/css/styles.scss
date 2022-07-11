@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #333;
+    font-family: "Open Sans", Arial, Sans-serif;
+
+    //HEADER
+
+    header{
+        width: 100%;
+        background: url(/restaurante/assets/bg.jpg), #281a0c;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center 0;
+        .header-container{
+            height: 700px;
+            @media screen and (max-width: 800px) {
+                height: 330px;
+            }
+            nav{
+                width: 50%;
+                margin: 0px auto;
+                text-align: right;
+                @media screen and (max-width: 800px) {
+                    width: 100%;
+                    text-align: center;
+                }
+                @media screen and (min-width: 801px) and (max-width: 1450px){
+                    width: auto;
+                }
+                a{
+                    margin: 35px 20px;
+                    color: white;
+                    text-decoration: none;
+                    display: inline-block;
+                    padding: 5px 0px;
+                    font-size: 20px;
+                    font-weight: 300;
+                    @media screen and (max-width: 800px) {
+                        margin: 10px 5px;
+                        text-align: center;
+                        font-size: 17px;
+                    }
+                }
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
+            .header-text{
+                color: white;
+                width: 50%;
+                margin: 200px auto;
+                text-align: left;
+                @media screen and (max-width: 800px) {
+                    margin: 10px auto;
+                }
+                h1{
+                    font-weight: 600;
+                    font-size: 45px;
+                    margin-bottom: 20px;
+                    span{
+                        font-weight: 300;
+                    }
+                }
+                h3{
+                    font-style: italic;
+                    font-size: 25px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+
+    //MAIN
+    main{
+        background: url(/restaurante/assets/bg-textura.png);
+
+        //ABOUT
+
+        .about{
+            height: 417px;
+            margin: 0px auto;
+            width: 65%;
+            display: flex;
+            justify-content: space-between;
+            @media screen and (max-width: 800px) {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            @media screen and (min-width: 801px) and (max-width: 1450px) {
+                display: block;
+            }
+            .image-container{
+                width: 60%;
+                @media screen and (max-width: 800px) {
+                    width: 100%;
+                }
+                @media screen and (min-width: 801px) and (max-width: 1450px) {
+                    width: 100%;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+            .about-text-container{
+                box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
+                background-color: white;
+                width: 40%;
+                @media screen and (max-width: 800px) {
+                    width: 100%;
+                    padding: 15px;
+                }
+                @media screen and (min-width: 801px) and (max-width: 1450px) {
+                    width: 100%;
+                    margin-bottom: 100px;
+                    padding: 20px 0px;
+                }
+                .about-text{
+                    margin: 10px auto;
+                    width: 80%;
+                    @media screen and (max-width: 800px) {
+                        margin: 0px auto;
+                    }
+                    h2{
+                        font-size: 40px;
+                        font-weight: 300;
+                        margin: 25px 0px;
+                        text-align: left;
+                    }
+                    p{
+                        margin: 30px 0px;
+                    }
+                }
+            }
+        }
+
+        //MENU
+
+        .menu{
+            width: 65%;
+            margin: 100px auto;
+            @media screen and (max-width: 800px) {
+                width: 85%;
+            }
+            @media screen and (min-width: 801px) and (max-width: 1450px) {
+                margin-top: 350px;
+            }
+            @media screen and (min-width: 950px) and (max-width: 1450px) {
+                margin-top: 500px;
+            }
+            h2{
+                text-align: center;
+                font-weight: 300;
+                font-size: 40px;
+                margin: 30px auto;
+            }
+            .menu-container{
+                border: 1px solid black;
+                padding: 10px;
+                .menu-container2{
+                    border: 1px solid black;
+                    .category-container{
+                        margin: 30px auto;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-around;
+                        div{
+                            margin: 10px 0px;
+                            width: 45%;
+                            h4 {
+                                text-align: center;
+                                font-size: 22px;
+                                }
+                            .item-container{
+                                height: auto;
+                                width: 90%;
+                                margin: 20px auto;
+                                border-bottom: 3px dotted black;
+                                .nombre-item{
+                                    font-weight: 400;
+                                    float: left;
+                                    width: 85%;
+                                    margin-bottom: 15px;
+                                    font-size: 23px;
+                                    @media screen and (max-width: 800px) {
+                                        text-align: left;
+                                        float: none;
+                                        width: 100%;
+                                        margin-bottom: 5px;
+                                        text-decoration: underline;
+                                    }
+                                }
+                                .precio-item{
+                                    float: right;
+                                    text-align: right;
+                                    width: 15%;
+                                    height: 50px;
+                                    font-size: 21px;
+                                    @media screen and (max-width: 800px) {
+                                        text-align: left;
+                                        margin: 10px 0px;
+                                        float: none;
+                                        width: 100%;
+                                        height: auto; 
+                                    }
+                                }
+                                .descripcion-item{
+                                    width: 85%;
+                                    font-size: 16px;
+                                    @media screen and (max-width: 800px) {
+                                        margin: 20px 0px;
+                                    }
+                                }
+                            }
+                        }              
+                    }
+                }
+            }
+        }
+
+        //GALERIA
+
+        .galeria{
+            width: 100%;
+            .imgs-container{
+                width: 100%;
+                display: flex;
+                img{
+                    opacity: 0.5;
+                    display: block;
+                    width: 25%;
+                    @media screen and (max-width: 800px) {
+                        opacity: 1;
+                    }
+                }
+                img:hover{
+                    opacity: 1;
+                    transition: all 0.5s ease;
+                }
+            }
+        }
+
+        //CONTACTO-HORARIOS-UBICACION
+
+        .contacto-horarios{
+            display: flex;
+            width: 70%;
+            margin: 30px auto;
+            justify-content: space-around;
+            div{
+                h3{
+                    text-align: center;
+                    font-size: 30px;
+                    font-weight: 300;
+                    border-bottom: 1px solid black;
+                }
+            }
+        }
+
+        .ubicacion-container{
+            width: 100%;
+            iframe{
+                width: 100%;
+            }
+        }
+
+    }
+
+    //FOOTER
+
+    footer{
+        background: black;
+        @media screen and (max-width: 800px) {
+            background: black;
+        }
+        p{
+            text-align: center;
+            padding: 40px 0px;
+            color: white;
+        }
+    }
+
+}
+
+//RESPONSIVE DESIGN
+//para usarlo con sass, debemos poner los estilos y media querys en el codigo "normal"
+
+

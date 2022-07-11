@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buscar show con la API TV Maze</title>
+    <link rel="stylesheet" href="./css/shows.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <img src="assets/tvm-header-logo.png" alt="logo TV Maze" />
+        <div class="user-container">
+          <p>Login</p>
+          <p>Register</p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li>Shows</li>
+          <li>Actors</li>
+          <li>Episodes</li>
+          <li>Networks</li>
+          <li>Articles</li>
+          <li>Calendar</li>
+          <li>Forums</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Buscador de shows de TV</h1>
+      <div class="search-container">
+        <input type="search" id="searchInput" />
+        <button class="search-btn" id="searchBtn">Buscar</button>
+        <p class="thanks-text">
+          Esto es posible gracias a la API de
+          <a target="_blank" href="https://www.tvmaze.com/api">TV Maze</a>
+        </p>
+      </div>
+
+      <section class="shows" id="shows"></section>
+
+      <template id="template">
+        <article>
+          <h3></h3>
+          <div></div>
+          <img />
+          <br />
+          <a></a>
+        </article>
+      </template>
+    </main>
+
+    <footer>
+      <div class="footer-text">
+        <p>Copyright © Gabriel Lamelza 2022. All rights reserved</p>
+      </div>
+    </footer>
+
+    <script src="./js/shows.js"></script>
+  </body>
+</html>
